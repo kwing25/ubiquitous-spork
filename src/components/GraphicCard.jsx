@@ -41,7 +41,7 @@ function GraphicCard() {
                 <p>{fact}</p>
             </div>
 
-            <h1>Autoplay example</h1>
+            {/* <h1>Autoplay example</h1>
             <div>
                 <video
                     style={{ maxWidth: "100%", width: "800px", margin: "0 auto" }}
@@ -53,7 +53,7 @@ function GraphicCard() {
                     src="https://stream.mux.com/6fiGM5ChLz8T66ZZiuzk1KZuIKX8zJz00/medium.mp4"
                     ref={videoEl}
                 />
-            </div>
+            </div> */}
         </div>
 
     );
