@@ -1,1 +1,2 @@
-# ubiquitous-spork
+# Mux Video Player Example React
+
