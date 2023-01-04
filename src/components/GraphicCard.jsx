@@ -1,21 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef} from "react";
 // import axios from "axios";
 // import MuxPlayer from '@mux/mux-player-react';
 
 function GraphicCard() {
 
-    const [fact, setFact] = useState("");
-    const fetchFact = () => {
-        fetch("https://catfact.ninja/fact")
-            .then((response) => response.json())
-            .then((data) => setFact(data.fact));
-    }
-    const handleClick = () => {
-        fetchFact()
-    }
-    useEffect(() => {
-        fetchFact()
-    }, []);
 
     const videoEl = useRef(null);
 
@@ -33,16 +21,10 @@ function GraphicCard() {
 
     return (
         <div>
-            <h1>GraphicCard</h1>
+            <h1 className="text-2xl bold">Example Video Player Mux</h1>
 
-            <div className="card w-100 bg-slate-300 mt-3 mb-5">
-                <h2>Press the button for a random cat fact!</h2>
 
-                <button className="bg-slate-500 rounded-full p-2" onClick={() => handleClick()}>Get Cat fact</button>
-                <p>{fact}</p>
-            </div>
-
-            <h1>Autoplay example</h1>
+            <h1 className="italic">Autoplay example</h1>
             <div>
                 <video
                     style={{ maxWidth: "100%", width: "800px", margin: "0 auto" }}
